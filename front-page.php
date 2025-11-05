@@ -159,8 +159,8 @@
             </div>
         </div>
     </div>
-    <div class="left-10 top-5 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="assets/img/brushes/about/1.png" alt="" /></div>
-    <div class="-bottom-[50px] right-0 absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="assets/img/brushes/about/2.png" alt="" /></div>
+    <div class="left-10 top-5 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/about/1.png'?>" alt="" /></div>
+    <div class="-bottom-[50px] right-0 absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/about/2.png'?>" alt="" /></div>
 </section>
 <!-- End About -->
 
@@ -199,13 +199,13 @@
             </div>
         </div>
         <div class="dizme_tm_portfolio_titles"></div>
-        <div class="md:flex work-filter wow fadeInUp" data-wow-duration="1s">
+        <div class="md:flex flex-wrap justify-center md:justify-start work-filter wow fadeInUp" data-wow-duration="1s">
             <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Mockup Shape" data-category="Youtube">
-                        <a class="img-zoom relative" href="assets/img/portfolio/1.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/1.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -214,9 +214,9 @@
             <div class="lg:w-1/3 md:w-1/3 p-3 vimeo">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Ave Bottle" data-category="Vimeo">
-                        <a class="img-zoom relative" href="assets/img/portfolio/2.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/4.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -225,9 +225,9 @@
             <div class="lg:w-1/3 md:w-1/3 p-3 soundcloud">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Magic Art" data-category="Soundcloud">
-                        <a class="img-zoom relative" href="assets/img/portfolio/3.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/2.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -236,9 +236,9 @@
             <div class="lg:w-1/3 md:w-1/3 p-3 popup">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Blue Lemon" data-category="Popup">
-                        <a class="img-zoom relative" href="assets/img/portfolio/4.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/4.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/5.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -247,9 +247,9 @@
             <div class="lg:w-1/3 md:w-1/3 p-3 detail">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Art Stone" data-category="Popup">
-                        <a class="img-zoom relative" href="assets/img/portfolio/5.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/3.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -258,9 +258,9 @@
             <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
                 <div class="rounded-xl overflow-hidden group relative">
                     <div class="main-img-box" data-title="Global Evolution" data-category="Detail">
-                        <a class="img-zoom relative" href="assets/img/portfolio/6.jpg">
+                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>">
                             <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="assets/img/portfolio/6.jpg" class="object-cover w-full h-full" alt="" />
+                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>" class="object-cover w-full h-full" alt="" />
                             </div>
                         </a>
                     </div>
@@ -268,8 +268,8 @@
             </div>
         </div>
     </div>
-    <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="assets/img/brushes/portfolio/1.png" alt="" /></div>
-    <div class="right-[10px] bottom-[51px] absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="assets/img/brushes/portfolio/2.png" alt="" /></div>
+    <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/1.png'?>" alt="" /></div>
+    <div class="right-[10px] bottom-[51px] absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/2.png'?>" alt="" /></div>
 </section>
 <!-- End Portfolio -->
 
@@ -305,10 +305,10 @@
                 </div>
             </div>
             <div class="relative">
-                <div>
-                    <img src="assets/img/skills/1.jpg" class="max-h-[800px] mx-auto" alt="" />
-                    <img src="assets/img/skills/2.jpg" class="max-h-[800px] mx-auto" alt="" />
-                </div>
+                <picture>
+                    <source srcset="<?php echo OMAR_URI . '/assets/img/skills/1.jpg'?>" type="image/jpeg">
+                    <img src="<?php echo OMAR_URI . '/assets/img/skills/1.jpg'?>" class="max-h-[800px] mx-auto" alt="" />
+                </picture>
             </div>
         </div>
     </div>
@@ -329,9 +329,8 @@
             <div class="wow fadeInLeft" data-wow-duration="1s">
                 <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
                     <div class="shrink-0 relative inline-block">
-                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="assets/img/svg/service/anchor.svg" alt="" />
-                        <img src="assets/img/brushes/service/1.png" alt="" />
-                        <img src="assets/img/brushes/service/dark/1.png" alt="" />
+                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/service/anchor.svg'?>" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/1.png'?>" alt="" />
                     </div>
                     <div>
                         <h3 class="text-[30px] mb-4">Creative Design</h3>
@@ -347,9 +346,8 @@
             <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                 <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
                     <div class="shrink-0 relative inline-block">
-                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="assets/img/svg/service/physics.svg" alt="" />
-                        <img src="assets/img/brushes/service/2.png" alt="" />
-                        <img src="assets/img/brushes/service/dark/2.png" alt="" />
+                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/service/physics.svg'?>" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/2.png'?>" alt="" />
                     </div>
                     <div>
                         <h3 class="text-[30px] mb-4">Graphic Design</h3>
@@ -365,9 +363,8 @@
             <div class="wow fadeInLeft" data-wow-duration="1s">
                 <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
                     <div class="shrink-0 relative inline-block">
-                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="assets/img/svg/service/contact.svg" alt="" />
-                        <img src="assets/img/brushes/service/3.png" alt="" />
-                        <img src="assets/img/brushes/service/dark/3.png" alt="" />
+                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/service/contact.svg'?>" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/3.png'?>" alt="" />
                     </div>
                     <div>
                         <h3 class="text-[30px] mb-4">UI/UX Design</h3>
@@ -383,9 +380,8 @@
             <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                 <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white dark:bg-semilight p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
                     <div class="shrink-0 relative inline-block">
-                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="assets/img/svg/service/web.svg" alt="" />
-                        <img src="assets/img/brushes/service/4.png" class="dark:hidden" alt="" />
-                        <img src="assets/img/brushes/service/dark/4.png" class="dark:block hidden" alt="" />
+                        <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/service/web.svg'?>" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/4.png'?>" class="dark:hidden" alt="" />
                     </div>
                     <div>
                         <h3 class="text-[30px] mb-4">Web Design</h3>
@@ -400,8 +396,8 @@
             </div>
         </div>
     </div>
-    <div class="top-[300px] left-0 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="assets/img/brushes/service/5.png" alt="" /></div>
-    <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="assets/img/brushes/service/6.png" alt="" /></div>
+    <div class="top-[300px] left-0 absolute hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/service/5.png'?>" alt="" /></div>
+    <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/service/6.png'?>" alt="" /></div>
 </section>
 <!-- End Services -->
 
@@ -415,11 +411,12 @@
                 <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
             </div>
         </div>
-        <div class="grid grid-cols-1 mt-20 relative bg-cover bg-top dark:bg-[url('../img/testimonials/bg-client-dark.png')] bg-[url('../img/testimonials/bg-client.png')]">
+        <div class="flex items-center justify-center mt-20 relative bg-cover bg-top" 
+            style="background-image: url('<?php echo OMAR_URI . '/assets/img/testimonials/bg-client.webp'?>');">
             <div id="owl-demo" class="owl-carousel">
                 <div class="text-center max-w-[900px] mx-auto">
                     <div class="mb-[35px]">
-                        <img class="!w-[65px] mx-auto" src="assets/img/svg/testimonials/quote.svg" alt="" />
+                        <img class="!w-[65px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/testimonials/quote.svg'?>" alt="" />
                     </div>
                     <div>
                         <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
@@ -428,7 +425,7 @@
                         </p>
                     </div>
                     <div class="flex items-center gap-[25px] mt-[51px] justify-center">
-                        <img src="assets/img/testimonials/4.jpg" class="!w-[60px] rounded-full" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/testimonials/4.jpg'?>" class="!w-[60px] rounded-full" alt="" />
                         <div class="text-start">
                             <h5 class="font-secondary text-2xl font-medium">Mike Anderson</h5>
                             <p class="text-muted dark:text-darkmuted text-base leading-7">Vivaco Studio</p>
@@ -474,7 +471,7 @@
             </div>
         </div>
     </div>
-    <div class="absolute right-5 -top-[120px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="assets/img/brushes/testimonials/1.png" alt="" /></div>
+    <div class="absolute right-5 -top-[120px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/testimonials/1.png'?>" alt="" /></div>
 </section>
 <!-- End Testimonial -->
 
@@ -484,55 +481,55 @@
         <div class="grid grid-cols-2 md:grid-cols-4 border-2 border-[#eee] dark:border-[#555] rounded-[10px]">
             <div class="border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/1.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/1.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/1.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/1.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/2.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/2.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/2.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/2.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="md:border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/3.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/3.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/3.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/3.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/4.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/4.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/4.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/4.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="border-[#eee] dark:border-[#555] border-b-2 md:border-b-0 wow fadeIn" data-wow-duration="1s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/5.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/5.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/5.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/5.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="border-l-2 border-[#eee] dark:border-[#555] border-b md:border-b-0 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/6.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/6.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/6.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/6.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="md:border-l-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/7.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/7.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/7.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/7.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
             <div class="border-l-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="assets/img/partners/dark/8.png" class="mx-auto max-w-[88%] dark:hidden" alt="" />
-                    <img src="assets/img/partners/light/8.png" class="mx-auto max-w-[88%] hidden dark:block" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/8.png'?>" class="mx-auto max-w-[88%]" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/8.png'?>" class="mx-auto max-w-[88%]" alt="" />
                 </a>
             </div>
         </div>
     </div>
-    <div class="-top-[170px] left-0 absolute hidden lg:block" data-wow-duration="1s"><img src="assets/img/brushes/partners/1.png" alt="" /></div>
+    <div class="-top-[170px] left-0 absolute hidden lg:block" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/partners/1.png'?>" alt="" /></div>
 </section>
 <!-- End Partners -->
 
@@ -549,7 +546,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="assets/img/news/1.jpg" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/1.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -564,7 +561,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="assets/img/news/2.jpg" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/2.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -579,7 +576,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="assets/img/news/3.jpg" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/3.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -593,8 +590,8 @@
             </div>
         </div>
     </div>
-    <div class="top-[250px] left-[115px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="assets/img/brushes/news/1.png" alt="" /></div>
-    <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="assets/img/brushes/news/2.png" alt="" /></div>
+    <div class="top-[250px] left-[115px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/news/1.png'?>" alt="" /></div>
+    <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/news/2.png'?>" alt="" /></div>
 </section>
 <!-- End Blog -->
 

@@ -43,7 +43,7 @@ var navbar = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".mobile-nav ul li");
 window.onscroll = function () {
-    if (window.pageYOffset > 80) {
+    if (window.pageYOffset > 80) {  
         navbar.classList.add("stickyadd");
     } else {
         navbar.classList.remove("stickyadd");

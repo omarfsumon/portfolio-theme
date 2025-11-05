@@ -12,12 +12,12 @@ function tailwind_portfolio_enqueue_assets() {
     // === JS ===
     wp_enqueue_script( 'jquery' );
 
-    wp_enqueue_script( 'isotope', get_stylesheet_directory_uri() . '/assets/js/isotope.js', [ 'jquery' ], $theme_version, true );
-    wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', [ 'jquery' ], $theme_version, true );
+    wp_enqueue_script( 'isotope', get_stylesheet_directory_uri() . '/assets/js/isotope.js', [ 'jquery' ], '2.0.0', true );
+    wp_enqueue_script( 'magnific-popup', get_stylesheet_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', [ 'jquery' ], '0.9.9', true );
     wp_enqueue_script( 'alpinejs', 'https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js', [], null, true );
-    wp_enqueue_script( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', [ 'jquery' ], $theme_version, true );
+    wp_enqueue_script( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', [ 'jquery' ], '2.3.4', true );
     wp_enqueue_script( 'tilt-jquery', get_stylesheet_directory_uri() . '/assets/js/tilt.jquery.js', [ 'jquery' ], $theme_version, true );
-    wp_enqueue_script( 'wow-js', get_stylesheet_directory_uri() . '/assets/js/wow.min.js', [], $theme_version, true );
+    wp_enqueue_script( 'wow-js', get_stylesheet_directory_uri() . '/assets/js/wow.min.js', [], '1.2.1', true );
     wp_enqueue_script( 'portfolio-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', [ 'jquery', 'isotope', 'magnific-popup', 'owl-carousel', 'wow-js' ], $theme_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'tailwind_portfolio_enqueue_assets' );

@@ -9,11 +9,12 @@ if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
     define('_S_VERSION', '1.0.0');
 }
+
 // Define theme paths
 define('OMAR_PATH', get_template_directory());
 define('OMAR_URI', get_template_directory_uri());
 
-/**
+/*
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function omarfolio_setup() {
@@ -43,7 +44,7 @@ function omarfolio_setup() {
 add_action('after_setup_theme', 'omarfolio_setup');
 
 
-/**
+/*
  * satup all pages puth location like "/page/page-about-us.php"
  */
 function omarfolio_page_template($template) {
@@ -56,4 +57,4 @@ function omarfolio_page_template($template) {
     }
     return $template;
 }
-add_filter('template_include', 'omarfolio_page_template');    
+add_filter('template_include', 'omarfolio_page_template');

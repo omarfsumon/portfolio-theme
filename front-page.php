@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Start Home -->
-<section class="flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header" id="home" style="background-image: url('<?php echo OMAR_URI . '/assets/img/slider/1.webp'?>');">
+<section class="flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header overflow-hidden" id="home" style="background-image: url('<?php echo OMAR_URI . '/assets/img/slider/1.webp'?>');">
     <div class="container grid lg:grid-cols-2 items-center gap-[25px]">
         <div class="order-2 lg:order-1">
             <h3 class="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">Hello, I'm</h3>
@@ -71,7 +71,7 @@
 <!-- End Home -->
 
 <!-- Start Process -->
-<section class="md:pt-[190px] pt-[135px] pb-[70px]" id="process">
+<section class="md:pt-[190px] pt-[135px] pb-[70px] overflow-hidden" id="process">
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]">
             <div class="text-center wow fadeInUp" data-wow-duration="1s">
@@ -116,7 +116,7 @@
 <!-- End Process -->
 
 <!-- Start About -->
-<section class="md:pt-[112px] pt-16 relative" id="about">
+<section class="md:pt-[112px] pt-16 relative overflow-hidden" id="about">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[90px] items-center">
             <div class="relative space-y-4 md:space-y-0">
@@ -165,7 +165,7 @@
 <!-- End About -->
 
 <!-- Start Portfolio -->
-<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px] relative" id="portfolio">
+<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px] relative overflow-hidden" id="portfolio">
     <div class="container relative z-10">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -274,7 +274,7 @@
 <!-- End Portfolio -->
 
 <!-- Start Skills -->
-<section>
+<section class="overflow-hidden">
     <div class="container relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[200px] items-center">
             <div>
@@ -306,8 +306,8 @@
             </div>
             <div class="relative">
                 <picture>
-                    <source srcset="<?php echo OMAR_URI . '/assets/img/skills/1.jpg'?>" type="image/jpeg">
-                    <img src="<?php echo OMAR_URI . '/assets/img/skills/1.jpg'?>" class="max-h-[800px] mx-auto" alt="" />
+                    <source srcset="<?php echo OMAR_URI . '/assets/img/skills/1.webp'?>" type="image/webp">
+                    <img src="<?php echo OMAR_URI . '/assets/img/skills/1.webp'?>" class="max-h-[800px] mx-auto" alt="" />
                 </picture>
             </div>
         </div>
@@ -316,7 +316,7 @@
 <!-- End Skills -->
 
 <!-- Start Services -->
-<section class="md:pt-[178px] pt-[120px] pb-[98px] md:pb-[160px] relative" id="service">
+<section class="md:pt-[178px] pt-[120px] pb-[98px] md:pb-[160px] relative overflow-hidden" id="service">
     <div class="container relative z-10">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -402,7 +402,7 @@
 <!-- End Services -->
 
 <!-- Start Testimonial -->
-<section class="relative pb-[127px] md:pb-[187px]">
+<section class="relative pb-[127px] md:pb-[187px] overflow-hidden">
     <div class="px-4 lg:px-0 relative z-10">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -476,7 +476,7 @@
 <!-- End Testimonial -->
 
 <!-- Start Partners -->
-<section class="relative pb-8">
+<section class="relative pb-8 overflow-hidden">
     <div class="container relative z-10">
         <div class="grid grid-cols-2 md:grid-cols-4 border-2 border-[#eee] dark:border-[#555] rounded-[10px]">
             <div class="border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s">
@@ -534,7 +534,7 @@
 <!-- End Partners -->
 
 <!-- Start Blog -->
-<section class="md:pt-[185px] pt-[120px] pb-[100px] md:pb-[160px] relative" id="blog">
+<section class="md:pt-[185px] pt-[120px] pb-[100px] md:pb-[160px] relative overflow-hidden" id="blog">
     <div class="container relative z-10">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -546,7 +546,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/1.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/1.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -561,7 +561,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/2.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/2.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -576,7 +576,7 @@
             <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                 <a href="#">
                     <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/3.jpg'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
+                        <img src="<?php echo OMAR_URI . '/assets/img/news/3.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
                         <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
                             <h3 class="text-2xl text-white leading-[1.2]">23</h3>
                             <span class="text-white text-sm">Dec</span>
@@ -596,7 +596,7 @@
 <!-- End Blog -->
 
 <!-- Start Subcribe -->
-<section>
+<section class="overflow-hidden">
     <div class="container">
         <div class="bg-[url('../img/subscribe/dots.jpg')] relative rounded-xl py-[90px] px-7 md:px-[86px]">
             <div class="bg-[#8067f0]/90 absolute inset-0 rounded-xl"></div>
@@ -619,7 +619,7 @@
 <!-- End Subcribe -->
 
 <!-- Start Contact -->
-<section class="md:pt-[190px] pt-[123px] pb-[120px] md:pb-[200px] relative" id="contact">
+<section class="md:pt-[190px] pt-[123px] pb-[120px] md:pb-[200px] relative overflow-hidden" id="contact">
     <div class="container">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -702,7 +702,7 @@
 <!-- End Contact -->
 
 <!-- Start Map -->
-<section class="relative pb-[120px] md:pb-[200px]">
+<section class="relative pb-[120px] md:pb-[200px] overflow-hidden">
     <div class="container">
         <div class="grid grid-cols-1">
             <div>

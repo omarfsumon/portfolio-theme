@@ -1,160 +1,208 @@
-// Tilt js animation
-$(".tilt-effect").tilt({
-    maxTilt: 4,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-    speed: 500,
-    transition: true,
-});
+/**
+ * custom.js – WordPress no-conflict mode
+ * -------------------------------------------------
+ * WordPress loads jQuery in noConflict() mode.
+ * $ is NOT available globally → wrap everything in jQuery( function( $ ) { … } )
+ */
+jQuery( function( $ ) {
 
-// Client Slider
-$(".owl-carousel").owlCarousel({
-    loop: true,
-    nav: false,
-    items: 1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    autoHeight: false,
-    autoHeightClass: "owl-height",
-});
+    // -------------------------------------------------
+    // 1. Tilt js animation
+    // -------------------------------------------------
+    $(".tilt-effect").tilt({
+        maxTilt: 4,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        speed: 500,
+        transition: true,
+    });
 
-// portfolio img effact
-$(".main-img-box").each(function () {
-    $(this)
-        .on("mouseenter", function () {
-            if ($(this).data("title")) {
-                $(".dizme_tm_portfolio_titles").html($(this).data("title") + '<span class="work__cat">' + $(this).data("category") + "</span>");
-                $(".dizme_tm_portfolio_titles").addClass("visible");
-            }
-            $(document).on("mousemove", function (e) {
-                $(".dizme_tm_portfolio_titles").css({
-                    left: e.clientX - 10,
-                    top: e.clientY + 25,
+    // -------------------------------------------------
+    // 2. Client Slider (Owl Carousel)
+    // -------------------------------------------------
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoHeight: false,
+        autoHeightClass: "owl-height",
+    });
+
+    // -------------------------------------------------
+    // 3. Portfolio img effect (title follow mouse)
+    // -------------------------------------------------
+    $(".main-img-box").each(function () {
+        $(this)
+            .on("mouseenter", function () {
+                if ($(this).data("title")) {
+                    $(".dizme_tm_portfolio_titles").html(
+                        $(this).data("title") +
+                        '<span class="work__cat">' +
+                        $(this).data("category") +
+                        "</span>"
+                    );
+                    $(".dizme_tm_portfolio_titles").addClass("visible");
+                }
+
+                $(document).on("mousemove", function (e) {
+                    $(".dizme_tm_portfolio_titles").css({
+                        left: e.clientX - 10,
+                        top: e.clientY + 25,
+                    });
                 });
+            })
+            .on("mouseleave", function () {
+                $(".dizme_tm_portfolio_titles").removeClass("visible");
+                $(document).off("mousemove");
             });
-        })
-        .on("mouseleave", function () {
-            $(".dizme_tm_portfolio_titles").removeClass("visible");
-        });
-});
+    });
 
-// Navbar sticky and active
-var navbar = document.querySelector("nav");
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(".mobile-nav ul li");
-window.onscroll = function () {
-    if (window.pageYOffset > 80) {  
-        navbar.classList.add("stickyadd");
-    } else {
-        navbar.classList.remove("stickyadd");
+    // -------------------------------------------------
+    // 4. Navbar sticky + active section highlight
+    // -------------------------------------------------
+    const navbar = document.querySelector("nav");
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll(".mobile-nav ul li");
+
+    window.addEventListener("scroll", function () {
+        // Sticky
+        if (window.pageYOffset > 80) {
+            navbar.classList.add("stickyadd");
+        } else {
+            navbar.classList.remove("stickyadd");
+        }
+
+        // Active menu
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLi.forEach((li) => {
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        });
+    });
+
+    // -------------------------------------------------
+    // 5. Mobile menu toggle
+    // -------------------------------------------------
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
     }
 
-    var current = "";
+    // -------------------------------------------------
+    // 6. Portfolio isotope filter
+    // -------------------------------------------------
+    $(window).on("load", function () {
+        const $container = $(".work-filter");
+        const $filter    = $("#menu-filter");
 
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
+        if ($container.length && $.fn.isotope) {
+            $container.isotope({
+                filter: "*",
+                layoutMode: "masonry",
+                animationOptions: {
+                    duration: 750,
+                    easing: "linear",
+                },
+            });
+
+            $filter.find("a").on("click", function (e) {
+                e.preventDefault();
+                const selector = $(this).attr("data-filter");
+                $filter.find("a").removeClass("active");
+                $(this).addClass("active");
+
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: "linear",
+                        queue: false,
+                    },
+                });
+            });
         }
     });
 
-    navLi.forEach((li) => {
-        li.classList.remove("active");
-        if (li.classList.contains(current)) {
-            li.classList.add("active");
-        }
-    });
-};
+    // -------------------------------------------------
+    // 7. Custom mouse cursor
+    // -------------------------------------------------
+    const myCursor = $(".mouse-cursor");
 
-// Menu Colleped
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+    if (myCursor.length) {
+        const e = document.querySelector(".cursor-inner"),
+              t = document.querySelector(".cursor-outer");
+        let n, i = 0, o = false;
 
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-});
+        window.onmousemove = function (s) {
+            if (!o) {
+                t.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
+            }
+            e.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
+            n = s.clientY;
+            i = s.clientX;
+        };
 
-// Portfolio filter
-$(window).on("load", function () {
-    var $container = $(".work-filter");
-    var $filter = $("#menu-filter");
-    $container.isotope({
-        filter: "*",
-        layoutMode: "masonry",
-        animationOptions: {
-            duration: 750,
-            easing: "linear",
+        $("body").on("mouseenter", "a, .cursor-pointer", function () {
+            e.classList.add("cursor-hover");
+            t.classList.add("cursor-hover");
+        }).on("mouseleave", "a, .cursor-pointer", function () {
+            if (!$(this).is("a") || !$(this).closest(".cursor-pointer").length) {
+                e.classList.remove("cursor-hover");
+                t.classList.remove("cursor-hover");
+            }
+        });
+
+        e.style.visibility = "visible";
+        t.style.visibility = "visible";
+    }
+
+    // -------------------------------------------------
+    // 8. Magnific Popup
+    // -------------------------------------------------
+    $(".img-zoom").magnificPopup({
+        type: "image",
+        closeOnContentClick: true,
+        mainClass: "mfp-fade",
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1],
         },
     });
 
-    $filter.find("a").on("click", function () {
-        var selector = $(this).attr("data-filter");
-        $filter.find("a").removeClass("active");
-        $(this).addClass("active");
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                animationDuration: 750,
-                easing: "linear",
-                queue: false,
-            },
-        });
-        return false;
-    });
-});
+    // -------------------------------------------------
+    // 9. Preloader
+    // -------------------------------------------------
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+    const preloader = $("#preloader");
 
-// Mouse pointer
-var myCursor = $(".mouse-cursor");
-
-if (myCursor.length) {
-    if ($("body")) {
-        const e = document.querySelector(".cursor-inner"),
-            t = document.querySelector(".cursor-outer");
-        let n,
-            i = 0,
-            o = !1;
-        (window.onmousemove = function (s) {
-            o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (n = s.clientY), (i = s.clientX);
-        }),
-            $("body").on("mouseenter", "a, .cursor-pointer", function () {
-                e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
-            }),
-            $("body").on("mouseleave", "a, .cursor-pointer", function () {
-                ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"));
-            }),
-            (e.style.visibility = "visible"),
-            (t.style.visibility = "visible");
-    }
-}
-
-// magnificPopup
-$(".img-zoom").magnificPopup({
-    type: "image",
-    closeOnContentClick: true,
-    mainClass: "mfp-fade",
-    gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-        preload: [0, 1],
-    },
-});
-
-// preloader
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-var preloader = $("#preloader");
-
-if (!isMobile) {
-    setTimeout(function () {
-        preloader.addClass("preloaded");
-    }, 800);
-    setTimeout(function () {
+    if (!isMobile) {
+        setTimeout(() => preloader.addClass("preloaded"), 800);
+        setTimeout(() => preloader.remove(), 2000);
+    } else {
         preloader.remove();
-    }, 2000);
-} else {
-    preloader.remove();
-}
+    }
 
-// Wow js
-new WOW().init();
+    // -------------------------------------------------
+    // 10. WOW.js init
+    // -------------------------------------------------
+    if (typeof WOW !== "undefined") {
+        new WOW().init();
+    }
 
-// Modal
+}); // end jQuery( function( $ ) { ... }

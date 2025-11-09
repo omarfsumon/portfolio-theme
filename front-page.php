@@ -174,98 +174,62 @@
                 <p class="text-muted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
             </div>
         </div>
-        <div class="grid grid-cols-1">
-            <div class="md:pt-[78px] pt-[53px] pb-[46px] md:pb-[56px]">
-                <ul class="flex items-center gap-4 flex-wrap lg:gap-[50px] justify-center" id="menu-filter">
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom active text-base duration-300" data-filter="*">All</a>
-                    </li>
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom text-base duration-300" data-filter=".youtube">Youtube</a>
-                    </li>
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom text-base duration-300" data-filter=".vimeo">Vimeo</a>
-                    </li>
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom text-base duration-300" data-filter=".soundcloud">Soundcloud</a>
-                    </li>
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom text-base duration-300" data-filter=".popup">Popup</a>
-                    </li>
-                    <li class="shrink-0">
-                        <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Detail</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="dizme_tm_portfolio_titles"></div>
-        <div class="md:flex flex-wrap justify-center md:justify-start work-filter wow fadeInUp" data-wow-duration="1s">
-            <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Mockup Shape" data-category="Youtube">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 wow fadeInUp" data-wow-duration="1s">
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Mockup Shape">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="lg:w-1/3 md:w-1/3 p-3 vimeo">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Ave Bottle" data-category="Vimeo">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Ave Bottle">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="lg:w-1/3 md:w-1/3 p-3 soundcloud">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Magic Art" data-category="Soundcloud">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Magic Art">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="lg:w-1/3 md:w-1/3 p-3 popup">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Blue Lemon" data-category="Popup">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/4.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Blue Lemon">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/4.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="lg:w-1/3 md:w-1/3 p-3 detail">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Art Stone" data-category="Popup">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Art Stone">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
-                <div class="rounded-xl overflow-hidden group relative">
-                    <div class="main-img-box" data-title="Global Evolution" data-category="Detail">
-                        <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>">
-                            <div class="main group-hover:scale-110 overflow-hidden">
-                                <img src="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>" class="object-cover w-full h-full" alt="" />
-                            </div>
-                        </a>
-                    </div>
+            </div>        
+            <div class="rounded-xl overflow-hidden group relative">
+                <div class="main-img-box" data-title="Global Evolution">
+                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>">
+                        <div class="main group-hover:scale-110 overflow-hidden">
+                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>" class="object-cover w-full h-full" alt="" />
+                        </div>
+                    </a>
                 </div>
-            </div>
+            </div>           
         </div>
     </div>
     <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/1.png'?>" alt="" /></div>
@@ -404,6 +368,7 @@
 <!-- Start Testimonial -->
 <section class="relative pb-[127px] md:pb-[187px] overflow-hidden">
     <div class="px-4 lg:px-0 relative z-10">
+        <!-- Header -->
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
                 <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Testimonials</p>
@@ -411,121 +376,109 @@
                 <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
             </div>
         </div>
+
+        <!-- Carousel -->
         <div class="flex items-center justify-center mt-20 relative bg-cover bg-top" 
-            style="background-image: url('<?php echo OMAR_URI . '/assets/img/testimonials/bg-client.webp'?>');">
-            <div id="owl-demo" class="owl-carousel">
-                <div class="text-center max-w-[900px] mx-auto">
-                    <div class="mb-[35px]">
-                        <img class="!w-[65px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/testimonials/quote.svg'?>" alt="" />
-                    </div>
-                    <div>
-                        <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
-                            I rarely like to write reviews, but the Marketify team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once
-                            again for everything and hope that I get to deal with you again in the near future.
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-[25px] mt-[51px] justify-center">
-                        <img src="<?php echo OMAR_URI . '/assets/img/testimonials/4.jpg'?>" class="!w-[60px] rounded-full" alt="" />
-                        <div class="text-start">
-                            <h5 class="font-secondary text-2xl font-medium">Mike Anderson</h5>
-                            <p class="text-muted dark:text-darkmuted text-base leading-7">Vivaco Studio</p>
+             style="background-image: url('<?php echo OMAR_URI . '/assets/img/testimonials/bg-client.webp'?>');">
+             
+            <div id="owl-demo" class="owl-carousel owl-theme max-w-[900px] mx-auto">
+
+                <?php
+                $args = array(
+                    'post_type'      => 'testimonial',
+                    'posts_per_page' => 6,
+                    'post_status'    => 'publish',
+                    'orderby'        => 'date',
+                    'order'          => 'DESC',
+                );
+                $query = new WP_Query( $args );
+
+                if ( $query->have_posts() ) : 
+                    while ( $query->have_posts() ) : $query->the_post(); 
+                        $meta       = get_post_meta( get_the_ID(), 'testimonial_meta', true );
+                        $review     = $meta['review'] ?? '';
+                        $location   = $meta['client_location'] ?? '';
+                        $client_img = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'thumbnail' ) : OMAR_URI . '/assets/img/placeholder.webp';
+                ?>
+
+                        <!-- প্রতিটি স্লাইড -->
+                        <div class="item text-center">
+                            <!-- Quote Icon -->
+                            <div class="mb-[35px]">
+                                <?php get_template_part( 'assets/img/svg/quote' ); ?>
+                            </div>
+
+                            <!-- Review Text -->
+                            <div>
+                                <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
+                                    <?php echo wp_kses_post( $review ); ?>
+                                </p>
+                            </div>
+
+                            <!-- Client Info -->
+                            <div class="flex items-center gap-[25px] mt-[51px] justify-center">
+                                <img 
+                                    src="<?php echo esc_url( $client_img ); ?>" 
+                                    class="!w-[60px] !h-[60px] rounded-full object-cover" 
+                                    alt="<?php the_title_attribute(); ?>" 
+                                />
+                                <div class="text-start">
+                                    <h5 class="font-secondary text-2xl font-medium">
+                                        <?php the_title(); ?>
+                                    </h5>
+                                    <span class="text-muted dark:text-darkmuted text-base leading-7">
+                                        <?php echo esc_html( $location ); ?>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="text-center max-w-[900px] mx-auto">
-                    <div class="mb-[35px]">
-                        <img class="!w-[65px] mx-auto" src="assets/img/svg/testimonials/quote.svg" alt="" />
-                    </div>
-                    <div>
-                        <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
-                            I rarely like to write reviews, but the Marketify team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once
-                            again for everything and hope that I get to deal with you again in the near future.
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-[25px] mt-[51px] justify-center">
-                        <img src="assets/img/testimonials/4.jpg" class="!w-[60px] rounded-full" alt="" />
-                        <div class="text-start">
-                            <h5 class="font-secondary text-2xl font-medium">Mike Anderson</h5>
-                            <p class="text-muted dark:text-darkmuted text-base leading-7">Vivaco Studio</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center max-w-[900px] mx-auto">
-                    <div class="mb-[35px]">
-                        <img class="!w-[65px] mx-auto" src="assets/img/svg/testimonials/quote.svg" alt="" />
-                    </div>
-                    <div>
-                        <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
-                            I rarely like to write reviews, but the Marketify team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once
-                            again for everything and hope that I get to deal with you again in the near future.
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-[25px] mt-[51px] justify-center">
-                        <img src="assets/img/testimonials/4.jpg" class="!w-[60px] rounded-full" alt="" />
-                        <div class="text-start">
-                            <h5 class="font-secondary text-2xl font-medium">Mike Anderson</h5>
-                            <p class="text-muted dark:text-darkmuted text-base leading-7">Vivaco Studio</p>
-                        </div>
-                    </div>
-                </div>
+                        <!-- /item -->
+
+                <?php 
+                    endwhile; 
+                    wp_reset_postdata(); 
+                endif; 
+                ?>
+
             </div>
+            <!-- /owl-carousel -->
         </div>
     </div>
-    <div class="absolute right-5 -top-[120px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/testimonials/1.png'?>" alt="" /></div>
+
+    <!-- Decorative Image -->
+    <div class="absolute right-5 -top-[120px] hidden lg:block wow fadeInRight" data-wow-duration="1s">
+        <img src="<?php echo OMAR_URI . '/assets/img/brushes/testimonials/1.png'?>" alt="" />
+    </div>
 </section>
 <!-- End Testimonial -->
 
 <!-- Start Partners -->
-<section class="relative pb-8 overflow-hidden">
+<section class="relative pb-16 overflow-hidden">
     <div class="container relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 border-2 border-[#eee] dark:border-[#555] rounded-[10px]">
-            <div class="border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/1.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/1.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+        <div class="grid grid-cols-2 md:grid-cols-4 border-2 border-[#eee] rounded-[10px]">
+            <div class="border-b-2 border-[#eee] opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/1.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/2.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/2.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="border-l-2 border-b-2 border-[#eee] opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/2.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="md:border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/3.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/3.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="md:border-l-2 border-b-2 border-[#eee] opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/3.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="border-l-2 border-b-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/4.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/4.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="border-l-2 border-b-2 border-[#eee] opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/4.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="border-[#eee] dark:border-[#555] border-b-2 md:border-b-0 wow fadeIn" data-wow-duration="1s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/5.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/5.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="border-[#eee] border-b-2 md:border-b-0 opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/5.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="border-l-2 border-[#eee] dark:border-[#555] border-b md:border-b-0 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/6.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/6.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="border-l-2 border-[#eee] border-b md:border-b-0 opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/6.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="md:border-l-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/7.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/7.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="md:border-l-2 border-[#eee] border-b md:border-b-0 opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/7.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
-            <div class="border-l-2 border-[#eee] dark:border-[#555] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                <a href="#" class="opacity-50 hover:opacity-100 cursor-pointer duration-300 h-[180px] flex items-center">
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/8.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                    <img src="<?php echo OMAR_URI . '/assets/img/partners/light/8.png'?>" class="mx-auto max-w-[88%]" alt="" />
-                </a>
+            <div class="border-l-2 border-[#eee] border-b md:border-b-0 opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <img src="<?php echo OMAR_URI . '/assets/img/partners/dark/8.png'?>" class="mx-auto max-w-[80%]" alt="" />
             </div>
         </div>
     </div>
@@ -533,84 +486,19 @@
 </section>
 <!-- End Partners -->
 
-<!-- Start Blog -->
-<section class="md:pt-[185px] pt-[120px] pb-[100px] md:pb-[160px] relative overflow-hidden" id="blog">
-    <div class="container relative z-10">
-        <div class="grid grid-cols-1">
-            <div class="text-center max-w-[680px] mx-auto">
-                <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">From My Blog</p>
-                <h3 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">Our Recent Updates, Blog, Tips, Tricks & More</h3>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-[65px] gap-[25px]">
-            <div class="wow fadeInUp" data-wow-duration="1s">
-                <a href="#">
-                    <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/1.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
-                        <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
-                            <h3 class="text-2xl text-white leading-[1.2]">23</h3>
-                            <span class="text-white text-sm">Dec</span>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <p class="text-custom font-medium font-secondary"><a href="#">Web Development</a></p>
-                        <h4 class="mt-1 leading-[1.4] text-[21px]"><a href="#" class="hover:text-custom">Jim Morisson Says when the musics over turn off the light</a></h4>
-                    </div>
-                </a>
-            </div>
-            <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="#">
-                    <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/2.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
-                        <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
-                            <h3 class="text-2xl text-white leading-[1.2]">23</h3>
-                            <span class="text-white text-sm">Dec</span>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <p class="text-custom font-medium font-secondary"><a href="#">Branding</a></p>
-                        <h4 class="mt-1 leading-[1.4] text-[21px]"><a href="#" class="hover:text-custom">How to be appreciated for your hard work as a developer</a></h4>
-                    </div>
-                </a>
-            </div>
-            <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                <a href="#">
-                    <div class="overflow-hidden group rounded-xl relative">
-                        <img src="<?php echo OMAR_URI . '/assets/img/news/3.webp'?>" class="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110" alt="" />
-                        <div class="bg-[#1cbe59] top-[18px] right-[18px] z-20 inline-block absolute rounded-xl text-center py-3 px-5">
-                            <h3 class="text-2xl text-white leading-[1.2]">23</h3>
-                            <span class="text-white text-sm">Dec</span>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <p class="text-custom font-medium font-secondary"><a href="#">Social Media</a></p>
-                        <h4 class="mt-1 leading-[1.4] text-[21px]"><a href="#" class="hover:text-custom">How designers and developers can collaborate better</a></h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="top-[250px] left-[115px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/news/1.png'?>" alt="" /></div>
-    <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/news/2.png'?>" alt="" /></div>
-</section>
-<!-- End Blog -->
-
 <!-- Start Subcribe -->
 <section class="overflow-hidden">
     <div class="container">
-        <div class="bg-[url('../img/subscribe/dots.jpg')] relative rounded-xl py-[90px] px-7 md:px-[86px]">
-            <div class="bg-[#8067f0]/90 absolute inset-0 rounded-xl"></div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 relative gap-y-10 lg:gap-y-0 items-center gap-4">
+        <div class="rounded-xl overflow-hidden" style="background-image: url('<?php echo OMAR_URI . '/assets/img/subscribe/dots.jpg'?>');">
+            <div class="bg-[#8067f0]/90 py-[90px] px-7 md:px-[86px] grid grid-cols-1 lg:grid-cols-2 relative gap-y-10 lg:gap-y-0 items-center gap-4">
                 <div class="text-white wow fadeInLeft" data-wow-duration="1s">
                     <p class="md:text-[21px] text-[19px] font-medium font-secondary">Subscribe Now</p>
                     <h4 class="mt-4 text-[35px] md:text-5xl">Get My Newsletter</h4>
                     <p class="mt-4 text-lg">Get latest news, updates, tips and trics in your inbox</p>
                 </div>
-                <div>
-                    <div class="relative wow fadeInRight" data-wow-duration="1s">
-                        <input type="email" class="form-input custom-mail" placeholder="Your email here" />
-                        <input type="submit" value="Send Now" class="sub-btn" />
-                    </div>
+                <div class="relative wow fadeInRight" data-wow-duration="1s">
+                    <input type="email" class="form-input custom-mail" placeholder="Your email here" />
+                    <input type="submit" value="Send Now" class="sub-btn" />
                 </div>
             </div>
         </div>
@@ -619,7 +507,7 @@
 <!-- End Subcribe -->
 
 <!-- Start Contact -->
-<section class="md:pt-[190px] pt-[123px] pb-[120px] md:pb-[200px] relative overflow-hidden" id="contact">
+<section class="md:py-[150px] py-[100px] relative overflow-hidden" id="contact">
     <div class="container">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -629,32 +517,44 @@
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-[25px]">
-            <div class="space-y-[15px] wow fadeInLeft" data-wow-duration="1s">
+            <div class="space-y-[50px] wow fadeInLeft" data-wow-duration="1s">
                 <div class="flex items-center gap-[25px]">
-                    <div class="shrink-0 h-[88px] w-[88px] leading-[88px] rounded-full bg-[#fedfd7] inline-block text-center text-2xl">
-                        <i class="icon-location text-custom"></i>
+                    <div class="h-[88px] w-[88px] rounded-full bg-[#fedfd7] inline-flex items-center justify-center text-[#f75023]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </g>
+                        </svg>
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Address</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">20, Somewhere in world</p>
+                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">Savar, Dhaka, Bangladesh</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-[25px]">
-                    <div class="shrink-0 h-[88px] w-[88px] leading-[88px] rounded-full bg-[#ddf5e6] inline-block text-center text-2xl">
-                        <i class="icon-mail-1 text-[#1cbe59]"></i>
+                    <div class="h-[88px] w-[88px] rounded-full inline-flex items-center justify-center text-[#1cbe59] bg-[#ddf5e6]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M11 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6" />
+                                <path d="m3 7l9 6l9-6m-1 14l2-2l-2-2m-3 0l-2 2l2 2" />
+                            </g>
+                        </svg>
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Email</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">hello@dizme.com</p>
+                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">hello@omarfsumon.com</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-[25px]">
-                    <div class="shrink-0 h-[88px] w-[88px] leading-[88px] rounded-full bg-[#ece8fd] inline-block text-center text-2xl">
-                        <i class="icon-phone text-[#8067f0]"></i>
+                    <div class="h-[88px] w-[88px] rounded-full inline-flex items-center justify-center bg-[#ece8fd] text-[#8067f0]">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path fill="currentColor" d="M8.656 3c-.523 0-1.039.188-1.469.531l-.062.031l-.031.032l-3.125 3.219l.031.03a3.13 3.13 0 0 0-.844 3.376c.004.008-.004.023 0 .031c.848 2.426 3.016 7.11 7.25 11.344c4.25 4.25 8.996 6.332 11.344 7.25h.031a3.59 3.59 0 0 0 3.469-.688L28.406 25c.828-.828.828-2.266 0-3.094l-4.062-4.062l-.032-.063c-.828-.828-2.296-.828-3.125 0l-2 2a16.2 16.2 0 0 1-4.093-2.812c-1.637-1.563-2.473-3.36-2.781-4.063l2-2c.84-.84.855-2.238-.032-3.062l.031-.032l-.093-.093l-4-4.125l-.031-.031l-.063-.032A2.36 2.36 0 0 0 8.656 3m0 2a.35.35 0 0 1 .219.094l4 4.093l.094.094c-.008-.008.058.098-.063.219l-2.5 2.5l-.469.438l.22.624s1.148 3.075 3.562 5.376l.219.187C16.261 20.746 19 21.906 19 21.906l.625.282l2.969-2.97c.172-.171.14-.171.312 0L27 23.314c.172.171.172.109 0 .28l-3.063 3.063c-.46.395-.949.477-1.53.282c-2.266-.891-6.669-2.825-10.595-6.75c-3.957-3.958-6.023-8.446-6.78-10.625c-.153-.407-.044-1.008.312-1.313l.062-.063l3.032-3.093A.35.35 0 0 1 8.655 5z" />
+                        </svg>
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Phone</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">+123 456 7890</p>
+                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">+880 1986 837385</p>
                     </div>
                 </div>
             </div>
@@ -701,47 +601,4 @@
 </section>
 <!-- End Contact -->
 
-<!-- Start Map -->
-<section class="relative pb-[120px] md:pb-[200px] overflow-hidden">
-    <div class="container">
-        <div class="grid grid-cols-1">
-            <div>
-                <div class="mapouter">
-                    <div class="gmap_canvas rounded-xl">
-                        <iframe
-                            width="100%"
-                            height="375"
-                            id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0"
-                            scrolling="no"
-                            marginheight="0"
-                            marginwidth="0"
-                        ></iframe>
-                        <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br />
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 375px;
-                                width: 100%;
-                            }
-                        </style>
-                        <a href="https://www.embedgooglemap.net">how to add google map</a>
-                        <style>
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 375px;
-                                width: 100%;
-                            }
-                        </style>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Map -->
- 
 <?php get_footer(); ?>

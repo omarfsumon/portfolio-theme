@@ -21,9 +21,8 @@
             <div class="flex items-center justify-between md:block">
                 <div class="justify-between items-center flex w-full">
                     <div class="z-50 relative">
-                        <a href="index.html">
-                            <img src="assets/img/logo/logo.png" class="lg:max-w-[150px] max-w-[90px] dark:hidden" alt="" />
-                            <img src="assets/img/logo/dark.png" class="lg:max-w-[150px] max-w-[90px] hidden dark:block" alt="" />
+                        <a href="/">
+                            <img src="<?php echo OMAR_URI . '/assets/img/logo/logo.png'?>" class="lg:max-w-[150px] max-w-[90px]" alt="" />
                         </a>
                     </div>
                     <div>

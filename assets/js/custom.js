@@ -106,37 +106,37 @@ jQuery( function( $ ) {
     // -------------------------------------------------
     // 6. Portfolio isotope filter
     // -------------------------------------------------
-    $(window).on("load", function () {
-        const $container = $(".work-filter");
-        const $filter    = $("#menu-filter");
+    // $(window).on("load", function () {
+    //     const $container = $(".work-filter");
+    //     const $filter    = $("#menu-filter");
 
-        if ($container.length && $.fn.isotope) {
-            $container.isotope({
-                filter: "*",
-                layoutMode: "masonry",
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear",
-                },
-            });
+    //     if ($container.length && $.fn.isotope) {
+    //         $container.isotope({
+    //             filter: "*",
+    //             layoutMode: "masonry",
+    //             animationOptions: {
+    //                 duration: 750,
+    //                 easing: "linear",
+    //             },
+    //         });
 
-            $filter.find("a").on("click", function (e) {
-                e.preventDefault();
-                const selector = $(this).attr("data-filter");
-                $filter.find("a").removeClass("active");
-                $(this).addClass("active");
+    //         $filter.find("a").on("click", function (e) {
+    //             e.preventDefault();
+    //             const selector = $(this).attr("data-filter");
+    //             $filter.find("a").removeClass("active");
+    //             $(this).addClass("active");
 
-                $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 750,
-                        easing: "linear",
-                        queue: false,
-                    },
-                });
-            });
-        }
-    });
+    //             $container.isotope({
+    //                 filter: selector,
+    //                 animationOptions: {
+    //                     duration: 750,
+    //                     easing: "linear",
+    //                     queue: false,
+    //                 },
+    //             });
+    //         });
+    //     }
+    // });
 
     // -------------------------------------------------
     // 7. Custom mouse cursor

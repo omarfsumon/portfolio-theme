@@ -18,7 +18,7 @@ function register_testimonial_post_type() {
         'publicly_queryable' => false,
         'capability_type' => 'post',
         'hierarchical' => true,
-        'menu_position' => 4,
+        'menu_position' => 6,
         'labels' => array(
             'name' => 'Testimonial',
             'singular_name' => 'Testimonial',

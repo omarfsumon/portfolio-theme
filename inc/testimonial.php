@@ -42,41 +42,6 @@ function register_testimonial_post_type() {
         ),
     ] );
 
-    //Meta Fields
-    if ( class_exists( 'CSF' ) ) {
-
-        $prefix = 'testimonial_meta';
-
-        CSF::createMetabox( $prefix, array(
-            'title'     => 'Testimonial Details',
-            'post_type' => 'testimonial',
-            'context'   => 'normal',
-            'priority'  => 'high',
-            'show_in_rest' => true,
-            'show_ui' => true,
-        ) );
-
-        // ফিল্ড যোগ
-        CSF::createSection( $prefix, array(
-            'fields' => array(
-
-                array(
-                    'id'    => 'client_location',
-                    'type'  => 'text',
-                    'title' => 'Client Location',
-                ),
-
-                array(
-                    'id'    => 'review',
-                    'type'  => 'textarea',
-                    'title' => 'Review',
-                    'placeholder' => 'Enter the review',
-                    'rows' => 4,
-                ),
-            )
-        ) );
-    }
-
     // প্লেসহোল্ডার চেঞ্জ করুন
     add_filter( 'enter_title_here', 'change_testimonial_title_placeholder' );
     function change_testimonial_title_placeholder( $title ) {
@@ -87,3 +52,76 @@ function register_testimonial_post_type() {
         return $title;
     }
 }
+
+
+//Metabox Field
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+	'key' => 'group_6911bb78443c8',
+	'title' => 'Testimonial Field',
+	'fields' => array(
+		array(
+			'key' => 'field_6911bb788ee0b',
+			'label' => 'Client Location',
+			'name' => 'client_location',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_6911bbcc8ee0c',
+			'label' => 'Review',
+			'name' => 'review',
+			'aria-label' => '',
+			'type' => 'textarea',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'rows' => '',
+			'placeholder' => '',
+			'new_lines' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'testimonial',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+) );
+} );

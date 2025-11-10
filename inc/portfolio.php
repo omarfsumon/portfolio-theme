@@ -53,55 +53,76 @@ function register_custom_post_type() {
 
 }
 
+//Metabox Field
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
 
-
-
-add_action( 'redux/metaboxes/your_theme_options/boxes', 'add_portfolio_metabox' );
-function add_portfolio_metabox( $metaboxes ) {
-
-    $box = [
-        'id'         => 'portfolio-project-details',
-        'title'      => 'Project Details',
-        'post_types' => [ 'portfolio' ],
-        'position'   => 'normal',
-        'priority'   => 'high',
-        'sections'   => [
-            [
-                'id'     => 'project-details-section',
-                'title'  => 'Project Information',
-                'fields' => [
-                    [
-                        'id'              => 'project_image',
-                        'type'            => 'media',
-                        'title'           => 'Main Image',
-                        'library_filter'  => [ 'jpg', 'png', 'gif' ],
-                    ],
-                    [
-                        'id'    => 'project_gallery',
-                        'type'  => 'gallery',
-                        'title' => 'Project Gallery',
-                    ],
-                    [
-                        'id'       => 'client_website',
-                        'type'     => 'text',
-                        'title'    => 'Client Website URL',
-                        'validate' => 'url',
-                    ],
-                    [
-                        'id'    => 'project_date',
-                        'type'  => 'date',
-                        'title' => 'Project Date',
-                    ],
-                    [
-                        'id'    => 'short_desc',
-                        'type'  => 'textarea',
-                        'title' => 'Short Description',
-                    ],
-                ],
-            ],
-        ],
-    ];
-
-    $metaboxes[] = $box;
-    return $metaboxes;
-}
+	acf_add_local_field_group( array(
+	'key' => 'group_6911ad9814464',
+	'title' => 'Portfolio Details',
+	'fields' => array(
+		array(
+			'key' => 'field_6911ae94c464f',
+			'label' => 'Project URL',
+			'name' => 'project_url',
+			'aria-label' => '',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '100',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_6911ad986f300',
+			'label' => 'Full Image',
+			'name' => 'full_image',
+			'aria-label' => '',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '100',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+			'preview_size' => 'full',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'portfolio',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+) );
+} );

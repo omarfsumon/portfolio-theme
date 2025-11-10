@@ -176,7 +176,7 @@
         </div>
         <div class="dizme_tm_portfolio_titles"></div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 wow fadeInUp" data-wow-duration="1s">
-            <div class="rounded-xl overflow-hidden group relative">
+            <!-- <div class="rounded-xl overflow-hidden group relative">
                 <div class="main-img-box" data-title="Mockup Shape">
                     <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>">
                         <div class="main group-hover:scale-110 overflow-hidden">
@@ -184,52 +184,67 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Ave Bottle">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
+            </div> -->
+                <?php
+                $args = array(
+                    'post_type'      => 'portfolio',
+                    'posts_per_page' => 6,
+                    'post_status'    => 'publish',
+                );
+                $query = new WP_Query( $args );
+
+                if ( $query->have_posts() ) : 
+                    while ( $query->have_posts() ) : $query->the_post(); 
+                    
+                        // ACF PDF ফিল্ড (Array রিটার্ন)
+                        $pdf_field = get_field('full_page'); // অথবা 'full_pdf' যদি নতুন ফিল্ড হয়
+                        $pdf_url   = is_array($pdf_field) ? $pdf_field['url'] : $pdf_field;
+                        $pdf_url   = $pdf_url ?: ''; // খালি হলে ফলব্যাক
+
+                        $thumb_url = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'large' ) : OMAR_URI . '/assets/img/placeholder.jpg';
+                        $title     = get_the_title();
+                ?>
+
+                    <div class="rounded-xl overflow-hidden group relative shadow-md">
+                        <div 
+                            class="main-img-box cursor-pointer" 
+                            data-title="<?php echo esc_attr( $title ); ?>"
+                        >
+                            <!-- ক্লিকে পপআপ ট্রিগার (PDF URL পাস করুন) -->
+                            <a 
+                                class="pdf-popup-link relative block" 
+                                href="#" 
+                                data-pdf-url="<?php echo esc_url( $pdf_url ); ?>"
+                                data-pdf-title="<?php echo esc_attr( $title ); ?>"
+                            >
+                                <div class="main group-hover:scale-110 overflow-hidden transition-transform duration-500">
+                                    <img 
+                                        src="<?php echo esc_url( $thumb_url ); ?>" 
+                                        class="object-cover w-full h-full" 
+                                        alt="<?php echo esc_attr( $title ); ?>" 
+                                    />
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+
+                <?php 
+                    endwhile; 
+                    wp_reset_postdata(); 
+                endif; 
+                ?>  
+
+                <!-- কাস্টম পপআপ টেমপ্লেট (JS দিয়ে লোড হবে) -->
+                <div id="pdf-popup" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+                    <div class="pdf-container bg-white dark:bg-gray-800 rounded-xl p-4 shadow-2xl max-w-[90vw] max-h-[90vh] overflow-auto relative">
+                        <button id="pdf-close" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-3xl">&times;</button>
+                        <h3 id="pdf-title" class="text-2xl font-bold mb-4 text-center"></h3>
+                        <iframe id="pdf-iframe" src="" class="w-full h-[80vh]" frameborder="0"></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Magic Art">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/2.jpg'?>" class="object-cover w-full h-full" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Blue Lemon">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/4.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>" class="object-cover w-full h-full" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Art Stone">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/5.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/3.jpg'?>" class="object-cover w-full h-full" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div>        
-            <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Global Evolution">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/6.jpg'?>" class="object-cover w-full h-full" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div>           
+            
+            <!-- Hover Title (মাউস ফলো করে) -->
+            <div class="dizme_tm_portfolio_titles visible"></div>
         </div>
     </div>
     <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/1.png'?>" alt="" /></div>

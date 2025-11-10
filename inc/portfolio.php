@@ -82,10 +82,10 @@ add_action( 'acf/include_fields', function() {
 		),
 		array(
 			'key' => 'field_6911ad986f300',
-			'label' => 'Full Image',
-			'name' => 'full_image',
+			'label' => 'Full Page',
+			'name' => 'full_page',
 			'aria-label' => '',
-			'type' => 'image',
+			'type' => 'file',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -96,14 +96,9 @@ add_action( 'acf/include_fields', function() {
 			),
 			'return_format' => 'array',
 			'library' => 'all',
-			'min_width' => '',
-			'min_height' => '',
 			'min_size' => '',
-			'max_width' => '',
-			'max_height' => '',
 			'max_size' => '',
 			'mime_types' => '',
-			'preview_size' => 'full',
 		),
 	),
 	'location' => array(
@@ -126,3 +121,43 @@ add_action( 'acf/include_fields', function() {
 	'show_in_rest' => 0,
 ) );
 } );
+
+
+
+
+add_action( 'wp_enqueue_scripts', 'pdf_popup_js' );
+function pdf_popup_js() {
+    wp_add_inline_script( 'jquery', '
+        jQuery(document).ready(function($){
+            // PDF পপআপ ওপেন
+            $(".pdf-popup-link").on("click", function(e){
+                e.preventDefault();
+                const pdfUrl = $(this).data("pdf-url");
+                const pdfTitle = $(this).data("pdf-title");
+                
+                if (pdfUrl) {
+                    // Google Viewer দিয়ে PDF embed (ডিফল্ট viewer বাইপাস)
+                    const embedUrl = "https://docs.google.com/viewer?url=" + encodeURIComponent(pdfUrl) + "&embedded=true";
+                    $("#pdf-iframe").attr("src", embedUrl);
+                    $("#pdf-title").text(pdfTitle);
+                    $("#pdf-popup").removeClass("hidden").addClass("flex");
+                    $("body").addClass("overflow-hidden"); // স্ক্রোল লক
+                }
+            });
+
+            // ক্লোজ বাটন
+            $("#pdf-close").on("click", function(){
+                $("#pdf-popup").addClass("hidden").removeClass("flex");
+                $("#pdf-iframe").attr("src", "");
+                $("body").removeClass("overflow-hidden");
+            });
+
+            // Esc কী দিয়ে ক্লোজ
+            $(document).on("keydown", function(e){
+                if (e.key === "Escape" && !$("#pdf-popup").hasClass("hidden")) {
+                    $("#pdf-close").click();
+                }
+            });
+        });
+    ' );
+}

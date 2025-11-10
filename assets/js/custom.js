@@ -30,35 +30,7 @@ jQuery( function( $ ) {
         autoHeightClass: "owl-height",
     });
 
-    // -------------------------------------------------
-    // 3. Portfolio img effect (title follow mouse)
-    // -------------------------------------------------
-    $(".main-img-box").each(function () {
-        $(this)
-            .on("mouseenter", function () {
-                if ($(this).data("title")) {
-                    $(".dizme_tm_portfolio_titles").html(
-                        $(this).data("title") +
-                        '<span class="work__cat">' +
-                        $(this).data("category") +
-                        "</span>"
-                    );
-                    $(".dizme_tm_portfolio_titles").addClass("visible");
-                }
-
-                $(document).on("mousemove", function (e) {
-                    $(".dizme_tm_portfolio_titles").css({
-                        left: e.clientX - 10,
-                        top: e.clientY + 25,
-                    });
-                });
-            })
-            .on("mouseleave", function () {
-                $(".dizme_tm_portfolio_titles").removeClass("visible");
-                $(document).off("mousemove");
-            });
-    });
-
+    
     // -------------------------------------------------
     // 4. Navbar sticky + active section highlight
     // -------------------------------------------------
@@ -171,18 +143,60 @@ jQuery( function( $ ) {
         t.style.visibility = "visible";
     }
 
-    // -------------------------------------------------
-    // 8. Magnific Popup
-    // -------------------------------------------------
-    $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: true,
-        mainClass: "mfp-fade",
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1],
-        },
+    jQuery(document).ready(function($) {
+
+        // -------------------------------------------------
+        // 3. Portfolio Hover Title (শুধু টাইটেল, ক্যাটাগরি রিমুভ)
+        // -------------------------------------------------
+        $(".main-img-box").each(function () {
+            $(this)
+                .on("mouseenter", function () {
+                    if ($(this).data("title")) {
+                        $(".dizme_tm_portfolio_titles").html(
+                            $(this).data("title")
+                        );
+                        $(".dizme_tm_portfolio_titles").addClass("visible");
+                    }
+
+                    $(document).on("mousemove", function (e) {
+                        $(".dizme_tm_portfolio_titles").css({
+                            left: e.clientX - 10,
+                            top: e.clientY + 25,
+                        });
+                    });
+                })
+                .on("mouseleave", function () {
+                    $(".dizme_tm_portfolio_titles").removeClass("visible");
+                    $(document).off("mousemove");
+                });
+        });
+
+        // -------------------------------------------------
+        // 8. Magnific Popup (শুধু যেখানে full_image আছে)
+        // -------------------------------------------------
+        $('.img-zoom[href$=".jpg"], .img-zoom[href$=".png"], .img-zoom[href$=".gif"], .img-zoom[href$=".webp"]').magnificPopup({
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+                titleSrc: function(item) {
+                    return item.el.attr('title') || '';
+                }
+            },
+            gallery: {
+                enabled: false
+            },
+            zoom: {
+                enabled: true,
+                duration: 300,
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+        });
+
     });
 
     // -------------------------------------------------

@@ -29,17 +29,32 @@ html {
   }
 }
 
+@layer components{
+  details {
+    @apply mb-1 shadow rounded-xl bg-[#f4f5fa];
+  }
+  details[open] summary svg {
+    @apply rotate-180 transition-all duration-300;
+  }
+  details p {
+    @apply py-8 px-5;
+  }
+  summary {
+      @apply list-none flex items-center justify-between cursor-pointer p-5 rounded-xl text-lg font-medium shadow bg-white;
+  }
+}
+
 @layer utilities {
 /* Navbar */
 .mobile-nav.stickyadd {
-  @apply bg-white dark:bg-semidark py-5 shadow-[0px_0px_10px_rgb(0,0,0,0.1)];
+  @apply bg-white py-5 shadow-[0px_0px_10px_rgb(0,0,0,0.1)];
 }
 
 .mobile-nav ul li.active {
   @apply text-custom;
 }
-}
 
+}
 
 /* Home */
 .dizme_tm_down {

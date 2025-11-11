@@ -243,7 +243,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/1.png'?>" alt="" /></div>
@@ -409,9 +408,10 @@
 
                 if ( $query->have_posts() ) : 
                     while ( $query->have_posts() ) : $query->the_post(); 
-                        $meta       = get_post_meta( get_the_ID(), 'testimonial_meta', true );
-                        $review     = $meta['review'] ?? '';
-                        $location   = $meta['client_location'] ?? '';
+                        //$meta       = get_post_meta( get_the_ID(), 'testimonial_meta', true );
+                        //$meta       = get_field('review');
+                        $review     = get_field('review');
+                        $location   = get_field('client_location');
                         $client_img = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'thumbnail' ) : OMAR_URI . '/assets/img/placeholder.webp';
                 ?>
 
@@ -614,5 +614,51 @@
     <div class="absolute bottom-[100px] right-[150px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/contact/2.png'?>" alt="" /></div>
 </section>
 <!-- End Contact -->
+
+<!-- FAQ -->
+<section id="faq" class="pb-[100px]">
+    <div class="container">
+       <h2 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5 text-center">Frequently Asked Questions</h2>
+       <div class="accordion max-w-5xl mx-auto">
+            <details>
+                <summary>Is my data safe and secure with you?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>Absolutely! Your data and credentials are always 100% confidential.</p>
+            </details>
+            <details>
+                <summary>Will I be able to edit my website later?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>Yes! I use Elementor, so you can easily update text, images, and layouts without needing to code.</p>
+            </details>
+            <details>
+                <summary>Can you build my project on your own server?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>Definitely, I can build your project on my own server and later I can transfer it to your server.</p>
+            </details>
+            <details>
+                <summary>Do you customize any provided theme ?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>Yes, I also. I have already done many websites using almost the maximum number of builders of WordPress. So I am ready for your response.</p>
+            </details>
+            <details>
+                <summary>I am ready to purchase! What do I need to get started?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>You need hosting & domain name. If you haven’t domain hosting. Don’t get afraid. I will help you with every step. For your existing site give me login access.</p>
+            </details>
+            <details>
+                <summary>Do you have any team for work?
+                    <?php get_template_part('assets/img/svg/arrow'); ?>
+                </summary>
+                <p>Yes, we are a web development agency. I have 8 member web developers. So I can deliver the work timely.</p>
+            </details>
+       </div>
+    </div>
+</section>
+<!-- End FAQ -->
 
 <?php get_footer(); ?>

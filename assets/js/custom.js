@@ -77,41 +77,6 @@ jQuery( function( $ ) {
     }
 
     // -------------------------------------------------
-    // 6. Portfolio isotope filter
-    // -------------------------------------------------
-    // $(window).on("load", function () {
-    //     const $container = $(".work-filter");
-    //     const $filter    = $("#menu-filter");
-
-    //     if ($container.length && $.fn.isotope) {
-    //         $container.isotope({
-    //             filter: "*",
-    //             layoutMode: "masonry",
-    //             animationOptions: {
-    //                 duration: 750,
-    //                 easing: "linear",
-    //             },
-    //         });
-
-    //         $filter.find("a").on("click", function (e) {
-    //             e.preventDefault();
-    //             const selector = $(this).attr("data-filter");
-    //             $filter.find("a").removeClass("active");
-    //             $(this).addClass("active");
-
-    //             $container.isotope({
-    //                 filter: selector,
-    //                 animationOptions: {
-    //                     duration: 750,
-    //                     easing: "linear",
-    //                     queue: false,
-    //                 },
-    //             });
-    //         });
-    //     }
-    // });
-
-    // -------------------------------------------------
     // 7. Custom mouse cursor
     // -------------------------------------------------
     const myCursor = $(".mouse-cursor");
@@ -219,4 +184,19 @@ jQuery( function( $ ) {
     if (typeof WOW !== "undefined") {
         new WOW().init();
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const detailsList = document.querySelectorAll('.accordion details');
+
+  detailsList.forEach((detail) => {
+    detail.addEventListener('toggle', function () {
+      if (detail.open) {
+        // close all other details
+        detailsList.forEach((other) => {
+          if (other !== detail) other.open = false;
+        });
+      }
+    });
+  });
 });

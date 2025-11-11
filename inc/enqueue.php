@@ -3,7 +3,7 @@ function tailwind_portfolio_enqueue_assets() {
     $theme_version = wp_get_theme()->get( 'Version' ) ?: '1.0.0';
 
     // === CSS ===
-    wp_enqueue_style( 'portfolio-icon', get_stylesheet_directory_uri() . '/assets/css/icon.css', [], $theme_version );
+    //wp_enqueue_style( 'portfolio-icon', get_stylesheet_directory_uri() . '/assets/css/icon.css', [], $theme_version );
     wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri() . '/assets/css/magnific-popup.css', [], $theme_version );
     wp_enqueue_style( 'animate-css', get_stylesheet_directory_uri() . '/assets/css/animate.min.css', [], $theme_version );
     wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', [], $theme_version );

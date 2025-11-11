@@ -4,6 +4,7 @@
  * WordPress loads jQuery in noConflict() mode.
  * $ is NOT available globally → wrap everything in jQuery( function( $ ) { … } )
  */
+
 jQuery( function( $ ) {
 
     // -------------------------------------------------
@@ -218,5 +219,4 @@ jQuery( function( $ ) {
     if (typeof WOW !== "undefined") {
         new WOW().init();
     }
-
-}); // end jQuery( function( $ ) { ... }
+});

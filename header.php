@@ -15,7 +15,7 @@
 <!-- End Preloader -->
 
 <!-- Start Navbar -->
-<header class="fixed top-0 w-full z-50">
+<header class="fixed top-0 w-full z-40">
     <nav class="py-[25px] relative ease-in-out duration-500 mobile-nav max-[768px]:shadow-[0px_0px_10px_rgb(0,0,0,0.1)] max-[768px]:py-[10px] max-[768px]:bg-white max-[768px]:dark:py-[20px] max-[768px]:dark:bg-semidark">
         <div class="container">
             <div class="flex items-center justify-between md:block">
@@ -38,7 +38,6 @@
                             <li class="about"><a href="#about" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">About</a></li>
                             <li class="portfolio"><a href="#portfolio" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Portfolio</a></li>
                             <li class="service"><a href="#service" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Service</a></li>
-                            <li class="blog"><a href="#blog" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Blog</a></li>
                             <li class="contact"><a href="#contact" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Contact</a></li>
                             <a href="https://www.fiverr.com/dev_omarfsumon" class="btn-outline-custom relative" target="_blank">Hire Me</a>
                         </ul>
@@ -52,7 +51,6 @@
                         <li class="about"><a href="#about" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">About</a></li>
                         <li class="portfolio"><a href="#portfolio" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Portfolio</a></li>
                         <li class="service"><a href="#service" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Service</a></li>
-                        <li class="blog"><a href="#blog" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Blog</a></li>
                         <li class="contact"><a href="#contact" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Contact</a></li>
                         <a href="https://www.fiverr.com/dev_omarfsumon" class="btn-outline-custom relative" target="_blank">Hire Me</a>
                     </ul>

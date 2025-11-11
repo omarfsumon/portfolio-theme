@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Start Home -->
-<section class="flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header overflow-hidden" id="home" style="background-image: url('<?php echo OMAR_URI . '/assets/img/slider/1.webp'?>');">
+<section class="flex items-center bg-center bg-cover lg:h-screen pt-28 relative dizme_tm_header overflow-hidden z-0" id="home" style="background-image: url('<?php echo OMAR_URI . '/assets/img/slider/1.webp'?>');">
     <div class="container grid lg:grid-cols-2 items-center gap-[25px]">
         <div class="order-2 lg:order-1">
             <h3 class="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">Hello, I'm</h3>
@@ -71,7 +71,7 @@
 <!-- End Home -->
 
 <!-- Start Process -->
-<section class="md:pt-[190px] pt-[135px] pb-[70px] overflow-hidden" id="process">
+<section class="md:pt-[190px] pt-[135px] pb-[70px] overflow-hidden z-0" id="process">
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]">
             <div class="text-center wow fadeInUp" data-wow-duration="1s">
@@ -116,7 +116,7 @@
 <!-- End Process -->
 
 <!-- Start About -->
-<section class="md:pt-[112px] pt-16 relative overflow-hidden" id="about">
+<section class="md:pt-[112px] pt-16 relative overflow-hidden z-0" id="about">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[90px] items-center">
             <div class="relative space-y-4 md:space-y-0">
@@ -165,8 +165,8 @@
 <!-- End About -->
 
 <!-- Start Portfolio -->
-<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px] relative overflow-hidden" id="portfolio">
-    <div class="container relative z-10">
+<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px]" id="portfolio">
+    <div class="container">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
                 <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Portfolio</p>
@@ -175,17 +175,8 @@
             </div>
         </div>
         <div class="dizme_tm_portfolio_titles"></div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 wow fadeInUp" data-wow-duration="1s">
-            <!-- <div class="rounded-xl overflow-hidden group relative">
-                <div class="main-img-box" data-title="Mockup Shape">
-                    <a class="img-zoom relative" href="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>">
-                        <div class="main group-hover:scale-110 overflow-hidden">
-                            <img src="<?php echo OMAR_URI . '/assets/img/portfolio/1.jpg'?>" class="object-cover w-full h-full" alt="" />
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-                <?php
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <?php
                 $args = array(
                     'post_type'      => 'portfolio',
                     'posts_per_page' => 6,
@@ -196,55 +187,63 @@
                 if ( $query->have_posts() ) : 
                     while ( $query->have_posts() ) : $query->the_post(); 
                     
-                        // ACF PDF ফিল্ড (Array রিটার্ন)
-                        $pdf_field = get_field('full_page'); // অথবা 'full_pdf' যদি নতুন ফিল্ড হয়
-                        $pdf_url   = is_array($pdf_field) ? $pdf_field['url'] : $pdf_field;
-                        $pdf_url   = $pdf_url ?: ''; // খালি হলে ফলব্যাক
+                    // ACF PDF ফিল্ড (Array রিটার্ন)
+                    $pdf_field = get_field('full_page'); // অথবা 'full_pdf' যদি নতুন ফিল্ড হয়
+                    $pdf_url   = is_array($pdf_field) ? $pdf_field['url'] : $pdf_field;
+                    $pdf_url   = $pdf_url ?: ''; // খালি হলে ফলব্যাক
 
-                        $thumb_url = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'large' ) : OMAR_URI . '/assets/img/placeholder.jpg';
-                        $title     = get_the_title();
-                ?>
+                    $thumb_url = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'large' ) : OMAR_URI . '/assets/img/placeholder.jpg';
+                    $title     = get_the_title();
+            ?>
 
-                    <div class="rounded-xl overflow-hidden group relative shadow-md">
-                        <div 
-                            class="main-img-box cursor-pointer" 
-                            data-title="<?php echo esc_attr( $title ); ?>"
-                        >
-                            <!-- ক্লিকে পপআপ ট্রিগার (PDF URL পাস করুন) -->
-                            <a 
-                                class="pdf-popup-link relative block" 
-                                href="#" 
-                                data-pdf-url="<?php echo esc_url( $pdf_url ); ?>"
-                                data-pdf-title="<?php echo esc_attr( $title ); ?>"
-                            >
-                                <div class="main group-hover:scale-110 overflow-hidden transition-transform duration-500">
-                                    <img 
-                                        src="<?php echo esc_url( $thumb_url ); ?>" 
-                                        class="object-cover w-full h-full" 
-                                        alt="<?php echo esc_attr( $title ); ?>" 
-                                    />
-                                </div>
-                            </a>
+            <div class="rounded-xl overflow-hidden group relative shadow-md">
+                <div 
+                    class="main-img-box cursor-pointer" 
+                    data-title="<?php echo esc_attr( $title ); ?>"
+                >
+                    <!-- ক্লিকে পপআপ ট্রিগার (PDF URL পাস করুন) -->
+                    <a 
+                        class="pdf-popup-link block" 
+                        href="#" 
+                        data-pdf-url="<?php echo esc_url( $pdf_url ); ?>"
+                        data-pdf-title="<?php echo esc_attr( $title ); ?>"
+                    >
+                        <div class="main group-hover:scale-110 overflow-hidden transition-transform duration-500">
+                            <img 
+                                src="<?php echo esc_url( $thumb_url ); ?>" 
+                                class="object-cover w-full h-full aspect-square" 
+                                alt="<?php echo esc_attr( $title ); ?>" 
+                            />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <?php 
+                endwhile; 
+                wp_reset_postdata(); 
+            endif; 
+            ?>  
+            <div id="pdf-popup" class="fixed inset-0 z-[99999] hidden overflow-hidden">
+              
+                <div id="pdf-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-md cursor-pointer"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center p-4">
+                    <div class="pdf-container bg-white rounded-2xl shadow-2xl w-full max-w-[1295px] h-[90vh] flex flex-col overflow-hidden relative">
+
+                        <button id="pdf-close" class="absolute top-3 right-3 text-red-500 hover:text-red-700 text-4xl z-10">&times;</button>
+
+                        <h3 id="pdf-title" class="text-2xl font-bold text-center p-4 border-b border-[#d6dbe5]"></h3>
+                        
+                        <div id="pdf-error" class="text-red-500 text-center p-4 hidden"></div>
+
+                        <div class="flex-1 overflow-y-auto flex justify-center items-start bg-gray-50">
+                            <canvas id="pdf-canvas" class="shadow-lg max-w-full"></canvas>
                         </div>
                     </div>
-
-                <?php 
-                    endwhile; 
-                    wp_reset_postdata(); 
-                endif; 
-                ?>  
-
-                <!-- কাস্টম পপআপ টেমপ্লেট (JS দিয়ে লোড হবে) -->
-                <div id="pdf-popup" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
-                    <div class="pdf-container bg-white dark:bg-gray-800 rounded-xl p-4 shadow-2xl max-w-[90vw] max-h-[90vh] overflow-auto relative">
-                        <button id="pdf-close" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-3xl">&times;</button>
-                        <h3 id="pdf-title" class="text-2xl font-bold mb-4 text-center"></h3>
-                        <iframe id="pdf-iframe" src="" class="w-full h-[80vh]" frameborder="0"></iframe>
-                    </div>
                 </div>
-            
-            <!-- Hover Title (মাউস ফলো করে) -->
-            <div class="dizme_tm_portfolio_titles visible"></div>
+            </div>
+
         </div>
     </div>
     <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/portfolio/1.png'?>" alt="" /></div>
@@ -253,7 +252,7 @@
 <!-- End Portfolio -->
 
 <!-- Start Skills -->
-<section class="overflow-hidden">
+<section class="overflow-hidden z-0">
     <div class="container relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[200px] items-center">
             <div>
@@ -286,7 +285,7 @@
             <div class="relative">
                 <picture>
                     <source srcset="<?php echo OMAR_URI . '/assets/img/skills/1.webp'?>" type="image/webp">
-                    <img src="<?php echo OMAR_URI . '/assets/img/skills/1.webp'?>" class="max-h-[800px] mx-auto" alt="" />
+                    <img src="<?php echo OMAR_URI . '/assets/img/skills/1.webp'?>" class="max-h-[800px] mx-auto !z-0" alt="" />
                 </picture>
             </div>
         </div>
@@ -295,7 +294,7 @@
 <!-- End Skills -->
 
 <!-- Start Services -->
-<section class="md:pt-[178px] pt-[120px] pb-[98px] md:pb-[160px] relative overflow-hidden" id="service">
+<section class="md:pt-[178px] pt-[120px] pb-[98px] md:pb-[160px] relative overflow-hidden z-0" id="service">
     <div class="container relative z-10">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -381,7 +380,7 @@
 <!-- End Services -->
 
 <!-- Start Testimonial -->
-<section class="relative pb-[127px] md:pb-[187px] overflow-hidden">
+<section class="relative pb-[127px] md:pb-[187px] overflow-hidden z-0">
     <div class="px-4 lg:px-0 relative z-10">
         <!-- Header -->
         <div class="grid grid-cols-1">
@@ -468,7 +467,7 @@
 <!-- End Testimonial -->
 
 <!-- Start Partners -->
-<section class="relative pb-16 overflow-hidden">
+<section class="relative pb-16 overflow-hidden z-0">
     <div class="container relative z-10">
         <div class="grid grid-cols-2 md:grid-cols-4 border-2 border-[#eee] rounded-[10px]">
             <div class="border-b-2 border-[#eee] opacity-50 hover:opacity-100 cursor-pointer duration-300 flex items-center h-[180px] wow fadeIn" data-wow-duration="1s">
@@ -502,7 +501,7 @@
 <!-- End Partners -->
 
 <!-- Start Subcribe -->
-<section class="overflow-hidden">
+<section class="overflow-hidden z-0">
     <div class="container">
         <div class="rounded-xl overflow-hidden" style="background-image: url('<?php echo OMAR_URI . '/assets/img/subscribe/dots.jpg'?>');">
             <div class="bg-[#8067f0]/90 py-[90px] px-7 md:px-[86px] grid grid-cols-1 lg:grid-cols-2 relative gap-y-10 lg:gap-y-0 items-center gap-4">
@@ -522,7 +521,7 @@
 <!-- End Subcribe -->
 
 <!-- Start Contact -->
-<section class="md:py-[150px] py-[100px] relative overflow-hidden" id="contact">
+<section class="md:py-[150px] py-[100px] relative overflow-hidden z-0" id="contact">
     <div class="container">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -611,8 +610,8 @@
             </div>
         </div>
     </div>
-    <div class="top-[100px] absolute left-0 hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="assets/img/brushes/contact/1.png" alt="" /></div>
-    <div class="absolute bottom-[100px] right-[150px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="assets/img/brushes/contact/2.png" alt="" /></div>
+    <div class="top-[100px] absolute left-0 hidden lg:block wow fadeInLeft" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/contact/1.png'?>" alt="" /></div>
+    <div class="absolute bottom-[100px] right-[150px] hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="<?php echo OMAR_URI . '/assets/img/brushes/contact/2.png'?>" alt="" /></div>
 </section>
 <!-- End Contact -->
 

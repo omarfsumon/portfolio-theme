@@ -1139,6 +1139,18 @@ summary{
   right: 150px;
 }
 
+.left-3{
+  left: 0.75rem;
+}
+
+.top-4{
+  top: 1rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1362,6 +1374,10 @@ summary{
 
 .\!w-\[65px\]{
   width: 65px !important;
+}
+
+.w-2{
+  width: 0.5rem;
 }
 
 .max-w-\[640px\]{
@@ -1914,6 +1930,14 @@ summary{
   line-height: 1.5rem;
 }
 
+.leading-none{
+  line-height: 1;
+}
+
+.leading-\[1\]{
+  line-height: 1;
+}
+
 .text-muted{
   --tw-text-opacity: 1;
   color: rgb(111 107 128 / var(--tw-text-opacity));
@@ -1957,6 +1981,26 @@ summary{
 .text-\[\#f75023\]{
   --tw-text-opacity: 1;
   color: rgb(247 80 35 / var(--tw-text-opacity));
+}
+
+.text-\[\#fc615d\]{
+  --tw-text-opacity: 1;
+  color: rgb(252 97 93 / var(--tw-text-opacity));
+}
+
+.text-\[\#fcbf41\]{
+  --tw-text-opacity: 1;
+  color: rgb(252 191 65 / var(--tw-text-opacity));
+}
+
+.text-\[\#34ca4a\]{
+  --tw-text-opacity: 1;
+  color: rgb(52 202 74 / var(--tw-text-opacity));
+}
+
+.text-\[\#444444\]{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2055,6 +2099,21 @@ summary{
 .mobile-nav ul li.active{
   --tw-text-opacity: 1;
   color: rgb(247 80 35 / var(--tw-text-opacity));
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Home */
@@ -2477,6 +2536,16 @@ summary{
 .hover\:text-custom:hover{
   --tw-text-opacity: 1;
   color: rgb(247 80 35 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#fcbf41\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(252 191 65 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#fc615d\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(252 97 93 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover{

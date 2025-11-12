@@ -165,7 +165,7 @@
 <!-- End About -->
 
 <!-- Start Portfolio -->
-<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px]" id="portfolio">
+<section class="pt-[113px] md:pt-[185px] pb-[88px] md:pb-[165px] relative overflow-hidden" id="portfolio">
     <div class="container">
         <div class="grid grid-cols-1">
             <div class="text-center max-w-[680px] mx-auto">
@@ -230,14 +230,30 @@
 
                 <div class="absolute inset-0 flex items-center justify-center p-4">
                     <div class="pdf-container bg-white rounded-2xl shadow-2xl w-full max-w-[1295px] h-[90vh] flex flex-col overflow-hidden relative">
-
-                        <button id="pdf-close" class="absolute top-3 right-3 text-red-500 hover:text-red-700 text-4xl z-10">&times;</button>
+                        <ul class="flex justify-center items-center absolute top-3 left-3">
+                            <li class="text-[#fc615d]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                                    <path fill="currentColor" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                                </svg>
+                            </li>
+                            <li class="text-[#fcbf41]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                                    <path fill="currentColor" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                                </svg>
+                            </li>
+                            <li class="text-[#34ca4a]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                                    <path fill="currentColor" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <button id="pdf-close" class="absolute top-4 right-4 leading-[1] text-[#444444] hover:text-[#fc615d] text-2xl z-10">&times;</button>
 
                         <h3 id="pdf-title" class="text-2xl font-bold text-center p-4 border-b border-[#d6dbe5]"></h3>
                         
                         <div id="pdf-error" class="text-red-500 text-center p-4 hidden"></div>
 
-                        <div class="flex-1 overflow-y-auto flex justify-center items-start bg-gray-50">
+                        <div class="flex-1 overflow-y-auto no-scrollbar flex justify-center items-start bg-gray-50">
                             <canvas id="pdf-canvas" class="shadow-lg max-w-full"></canvas>
                         </div>
                     </div>
@@ -616,7 +632,7 @@
 <!-- End Contact -->
 
 <!-- FAQ -->
-<section id="faq" class="pb-[100px]">
+<section id="faq" class="pb-[100px] overflow-hidden">
     <div class="container">
        <h2 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5 text-center">Frequently Asked Questions</h2>
        <div class="accordion max-w-5xl mx-auto">

@@ -7,28 +7,12 @@
             <h3 class="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">Hello, I'm</h3>
             <h1 class="text-[42px] lg:text-[60px] xl:text-[85px] text-center lg:text-left mb-[11px] lg:mb-[18px] leading-[1.3] font-medium font-secondary">Omar F Sumon</h1>
             <p class="lg:mb-9 mb-[15px] text-lg lg:text-[19px] xl:text-[28px] text-center lg:text-left font-medium">
-                A <span class="text-[#1cbe59]">Web Developer</span> From <span class="text-[#8067f0] dark:text-[#f0c45c]">Bangladesh</span>
+                A <span class="text-[#1cbe59]">Web Developer</span> From <span class="text-[#8067f0]">Bangladesh</span>
             </p>
-            <p class="lg:mb-[42px] text-muted dark:text-white mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
-                I'm creative designer based in New York, and I'm very passionate and dedicated to my work.
+            <p class="lg:mb-[42px] text-muted mb-[30px] text-base lg:text-xl text-center lg:text-left leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
+                I build clean, modern, and high-performing websites that help businesses grow. I’ve already worked with clients across the USA, Europe, and Asia — <br>and I’m ready to build something amazing for you too.
             </p>
-            <div class="flex items-center justify-center lg:justify-start gap-[25px]">
-                <a href="#about" class="btn-custom relative">About Me</a>
-                <ul class="flex items-center gap-2">
-                    <li>
-                        <a href="#"><i class="icon-facebook-1"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon-twitter-1"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon-linkedin-1"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="icon-behance"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <a href="#about" class="btn-custom relative">Hire Me</a>
         </div>
         <div class="order-1 lg:order-2">
             <div class="relative">
@@ -57,12 +41,12 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;"
             >
-                <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" class="stroke-[20px] stroke-dark dark:stroke-white" />
+                <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" class="stroke-[20px] stroke-dark" />
                 <path
                     id="mouse"
                     fill="none"
                     d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-                    class="stroke-[20px] stroke-dark dark:stroke-white"
+                    class="stroke-[20px] stroke-dark"
                 />
             </svg>
         </a>
@@ -82,8 +66,8 @@
                     </span>
                 </div>
                 <div class="mt-[30px]">
-                    <h3 class="text-2xl">Pixel Perfect Design</h3>
-                    <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                    <h3 class="text-2xl">Pixel-Perfect Design</h3>
+                    <p class="mx-auto text-muted mt-5 leading-[30px]">Beautiful, modern, and user-friendly designs crafted with attention to detail.</p>
                 </div>
             </div>
             <div class="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -95,7 +79,7 @@
                 </div>
                 <div class="mt-[30px]">
                     <h3 class="text-2xl">Mobile First Design</h3>
-                    <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                    <p class="mx-auto text-muted mt-5 leading-[30px]">Your website will look flawless on every device — especially mobile.</p>
                 </div>
             </div>
             <div class="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
@@ -106,8 +90,8 @@
                     </span>
                 </div>
                 <div class="mt-[30px]">
-                    <h3 class="text-2xl">Performance Priority</h3>
-                    <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                    <h3 class="text-2xl">Performance Focused</h3>
+                    <p class="mx-auto text-muted mt-5 leading-[30px]">Fast loading, SEO-friendly, and optimized for the best user experience.</p>
                 </div>
             </div>
         </div>
@@ -150,8 +134,8 @@
                     <h3 class="md:text-[48px] text-[35px] leading-[1.25] mt-1.5 wow fadeInUp" data-wow-duration="1s">I Can Design Anything You Want</h3>
                 </div>
                 <p class="text-muted lg:max-w-[485px] leading-[30px] mb-[47px] wow fadeInUp" data-wow-duration="1s">
-                    Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project
-                    a success. I enjoy every step of the design process, from discussion and collaboration.
+                    I mix creative design with solid development skills to build websites that not only look great but also perform exceptionally well. 
+                    Whether it's a landing page or a complete website, I make sure everything feels smooth, intuitive, and conversion-ready.
                 </p>
                 <div class="wow fadeInUp" data-wow-duration="1s">
                     <a href="#contact" class="btn-custom">Hire Me</a>
@@ -273,26 +257,39 @@
             <div>
                 <div class="mb-[23px] wow fadeInUp" data-wow-duration="1s">
                     <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Design is Life</p>
-                    <h3 class="md:text-[48px] text-[35px] leading-[1.25] mt-1.5">I Develop Skills Regularly to Keep Me Update</h3>
+                    <h3 class="md:text-[48px] text-[35px] leading-[1.25] mt-1.5">I Develop Skills Regularly to Stay Updated</h3>
                 </div>
-                <p class="text-muted lg:max-w-[485px] leading-[30px] wow fadeInUp" data-wow-duration="1s">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                <p class="text-muted lg:max-w-[485px] leading-[30px] wow fadeInUp" data-wow-duration="1s">Tech evolves every day, so I keep leveling up. 
+                    Here’s my current skill lineup:</p>
                 <div class="pt-[30px] space-y-[22px] wow fadeInUp" data-wow-duration="1s">
-                    <div class="w-full mb-[22px] relative" data-value="85" data-color="#f75023">
-                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">Illustrator</span><span class="absolute right-[15%] text-custom">85%</span></div>
+                    <div class="w-full mb-[22px] relative" data-value="95" data-color="#f75023">
+                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">HTML</span><span class="absolute right-[5%] text-custom">95%</span></div>
                         <div class="w-full bg-[#e7e5f1] rounded-full h-2">
-                            <div class="bg-custom h-2 rounded-full" style="width: 85%;"></div>
+                            <div class="bg-custom h-2 rounded-full" style="width: 95%;"></div>
                         </div>
                     </div>
-                    <div class="w-full mb-[22px] relative" data-value="95" data-color="#f75023">
-                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">Photoshop</span><span class="absolute right-[5%] text-custom">95%</span></div>
+                    <div class="w-full mb-[22px] relative" data-value="90" data-color="#f75023">
+                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">CSS</span><span class="absolute right-[10%] text-custom">90%</span></div>
                         <div class="w-full bg-[#e7e5f1] rounded-full h-2">
-                            <div class="bg-[#1cbe59] h-2 rounded-full" style="width: 95%;"></div>
+                            <div class="bg-[#1cbe59] h-2 rounded-full" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="w-full mb-[22px] relative" data-value="75" data-color="#f75023">
-                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">Figma</span><span class="absolute right-[25%] text-custom">75%</span></div>
+                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">JavaScript</span><span class="absolute right-[25%] text-custom">75%</span></div>
                         <div class="w-full bg-[#e7e5f1] rounded-full h-2">
-                            <div class="bg-[#8067f0] h-2 rounded-full" style="width: 75%;"></div>
+                            <div class="bg-[#f7e025] h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="w-full mb-[22px] relative" data-value="85" data-color="#f75023">
+                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">PHP</span><span class="absolute right-[15%] text-custom">85%</span></div>
+                        <div class="w-full bg-[#e7e5f1] rounded-full h-2">
+                            <div class="bg-[#8067f0] h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="w-full mb-[22px] relative" data-value="95" data-color="#f75023">
+                        <div class="mb-[9px] block"><span class="text-lg font-medium font-secondary inline-block">WordPress</span><span class="absolute right-[5%] text-custom">95%</span></div>
+                        <div class="w-full bg-[#e7e5f1] rounded-full h-2">
+                            <div class="bg-[#00749c] h-2 rounded-full" style="width: 95%;"></div>
                         </div>
                     </div>
                 </div>
@@ -326,12 +323,12 @@
                         <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/1.png'?>" alt="" />
                     </div>
                     <div>
-                        <h3 class="text-[30px] mb-4">Creative Design</h3>
+                        <h3 class="text-[30px] mb-4">Landing Page Design</h3>
                         <p class="text-[21px] mb-5 font-medium font-secondary text-dark ">
                             <span>Starts from <span class="text-2xl text-custom">$99</span></span>
                         </p>
                         <p class="text-muted text-lg leading-[30px]">
-                            Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development
+                            landing page design is a type of website design that is focused on a single page, typically a landing page, that is designed to convert visitors into customers.
                         </p>
                     </div>
                 </div>
@@ -343,12 +340,12 @@
                         <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/2.png'?>" alt="" />
                     </div>
                     <div>
-                        <h3 class="text-[30px] mb-4">Graphic Design</h3>
+                        <h3 class="text-[30px] mb-4">Website Design</h3>
                         <p class="text-[21px] mb-5 font-medium font-secondary text-dark">
-                            <span>Starts from <span class="text-2xl text-custom">$199</span></span>
+                            <span>Starts from <span class="text-2xl text-custom">$299</span></span>
                         </p>
                         <p class="text-muted text-lg leading-[30px]">
-                            Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development
+                            website design is a type of website design that is focused on a single page, typically a landing page, that is designed to convert visitors into customers.
                         </p>
                     </div>
                 </div>
@@ -360,29 +357,29 @@
                         <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/3.png'?>" alt="" />
                     </div>
                     <div>
-                        <h3 class="text-[30px] mb-4">UI/UX Design</h3>
-                        <p class="text-[21px] mb-5 font-medium font-secondary text-dark dark:text-white">
-                            <span>Starts from <span class="text-2xl text-custom">$299</span></span>
+                        <h3 class="text-[30px] mb-4">Website Development</h3>
+                        <p class="text-[21px] mb-5 font-medium font-secondary text-dark">
+                            <span>Starts from <span class="text-2xl text-custom">$399</span></span>
                         </p>
-                        <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">
-                            Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development
+                        <p class="text-muted text-lg leading-[30px]">
+                            website development is a type of website design that is focused on a single page, typically a landing page, that is designed to convert visitors into customers.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white dark:bg-semilight p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
+                <div class="shadow-[18px_0px_87px_rgba(10,15,17,0.07)] bg-white p-8 lg:p-[65px] rounded-xl space-y-6 lg:space-y-0 lg:flex items-start gap-12 tilt-effect">
                     <div class="shrink-0 relative inline-block">
                         <img class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] h-[45px] mx-auto" src="<?php echo OMAR_URI . '/assets/img/svg/service/web.svg'?>" alt="" />
                         <img src="<?php echo OMAR_URI . '/assets/img/brushes/service/4.png'?>" class="dark:hidden" alt="" />
                     </div>
                     <div>
-                        <h3 class="text-[30px] mb-4">Web Design</h3>
-                        <p class="text-[21px] mb-5 font-medium font-secondary text-dark dark:text-white">
-                            <span>Starts from <span class="text-2xl text-custom">$399</span></span>
+                        <h3 class="text-[30px] mb-4">Website Maintenance</h3>
+                        <p class="text-[21px] mb-5 font-medium font-secondary text-dark">
+                            <span>Starts from <span class="text-2xl text-custom">$50</span></span>
                         </p>
-                        <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">
-                            Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development
+                        <p class="text-muted text-lg leading-[30px]">
+                            website maintenance is a type of website design that is focused on a single page, typically a landing page, that is designed to convert visitors into customers.
                         </p>
                     </div>
                 </div>
@@ -402,7 +399,7 @@
             <div class="text-center max-w-[680px] mx-auto">
                 <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Testimonials</p>
                 <h3 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">What My Clients Say</h3>
-                <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                <p class="text-muted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
             </div>
         </div>
 
@@ -424,8 +421,6 @@
 
                 if ( $query->have_posts() ) : 
                     while ( $query->have_posts() ) : $query->the_post(); 
-                        //$meta       = get_post_meta( get_the_ID(), 'testimonial_meta', true );
-                        //$meta       = get_field('review');
                         $review     = get_field('review');
                         $location   = get_field('client_location');
                         $client_img = has_post_thumbnail() ? get_the_post_thumbnail_url( null, 'thumbnail' ) : OMAR_URI . '/assets/img/placeholder.webp';
@@ -440,7 +435,7 @@
 
                             <!-- Review Text -->
                             <div>
-                                <p class="md:text-[30px] text-xl text-muted dark:text-darkmuted italic leading-[1.6]">
+                                <p class="md:text-[30px] text-xl text-muted italic leading-[1.6]">
                                     <?php echo wp_kses_post( $review ); ?>
                                 </p>
                             </div>
@@ -456,7 +451,7 @@
                                     <h5 class="font-secondary text-2xl font-medium">
                                         <?php the_title(); ?>
                                     </h5>
-                                    <span class="text-muted dark:text-darkmuted text-base leading-7">
+                                    <span class="text-muted text-base leading-7">
                                         <?php echo esc_html( $location ); ?>
                                     </span>
                                 </div>
@@ -543,7 +538,7 @@
             <div class="text-center max-w-[680px] mx-auto">
                 <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Contact Me</p>
                 <h3 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">I Want To Hear From You</h3>
-                <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+                <p class="text-muted text-lg leading-[30px]">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-[25px]">
@@ -559,7 +554,7 @@
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Address</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">Savar, Dhaka, Bangladesh</p>
+                        <p class="text-lg mt-1.5 text-muted leading-8">Savar, Dhaka, Bangladesh</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-[25px]">
@@ -573,7 +568,7 @@
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Email</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">hello@omarfsumon.com</p>
+                        <p class="text-lg mt-1.5 text-muted leading-8">hello@omarfsumon.com</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-[25px]">
@@ -584,7 +579,7 @@
                     </div>
                     <div>
                         <h5 class="md:text-[30px] text-[25px]">Phone</h5>
-                        <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">+880 1986 837385</p>
+                        <p class="text-lg mt-1.5 text-muted leading-8">+880 1986 837385</p>
                     </div>
                 </div>
             </div>

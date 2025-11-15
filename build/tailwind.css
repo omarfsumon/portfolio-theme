@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,16 +33,22 @@ html {
 
 @layer components{
   details {
-    @apply mb-1 shadow rounded-xl bg-[#f4f5fa];
+    @apply mb-1 rounded-xl bg-[#f5f7fa] shadow overflow-hidden transition-all duration-300;
+  }
+  details[open] {
+    @apply rounded-xl transition-all duration-300;
   }
   details[open] summary svg {
-    @apply rotate-180 transition-all duration-300;
+    @apply rotate-45 transition-all duration-300;
   }
-  details p {
+  details > p {
     @apply py-8 px-5;
   }
   summary {
-      @apply list-none flex items-center justify-between cursor-pointer p-5 rounded-xl text-lg font-medium shadow bg-white;
+    @apply list-none flex items-center justify-between cursor-pointer p-5 rounded-xl text-lg font-medium select-none transition-all duration-300;
+  }
+  summary svg {
+    @apply transition-transform duration-300 ease-out;
   }
 }
 

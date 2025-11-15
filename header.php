@@ -21,9 +21,7 @@
             <div class="flex items-center justify-between md:block">
                 <div class="justify-between items-center flex w-full">
                     <div class="z-50 relative">
-                        <a href="/">
-                            <img src="<?php echo OMAR_URI . '/assets/img/logo/logo.png'?>" class="lg:max-w-[150px] max-w-[90px]" alt="" />
-                        </a>
+                        <a class="text-4xl italic font-logo font-medium" href="/">Omar F Sumon</a>
                     </div>
                     <div>
                         <button class="block md:hidden outline-none mobile-menu-button">

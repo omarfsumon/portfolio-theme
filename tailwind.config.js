@@ -15,6 +15,7 @@ module.exports = {
     fontFamily: {
       primary: ['Open Sans', 'sans-serif'],
       secondary: ['Jost', 'sans-serif'],
+      logo: ['Oleo Script', 'system-ui'],
     },
     container: {
       center: true,

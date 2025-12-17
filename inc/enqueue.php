@@ -21,8 +21,8 @@ function tailwind_portfolio_enqueue_assets() {
     wp_enqueue_script( 'portfolio-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', [ 'jquery', 'isotope', 'magnific-popup', 'owl-carousel', 'wow-js' ], $theme_version, true );
     
     // PDF.js CDN
-    wp_enqueue_script( 'pdfjs', get_template_directory_uri() . '/assets/js/pdf.min.js', array(), null, true);
-    wp_enqueue_script( 'pdf-viewer', get_template_directory_uri() . '/assets/js/pdf-viewer.js', array('jquery', 'pdfjs'), null, true );
+    // wp_enqueue_script( 'pdfjs', get_template_directory_uri() . '/assets/js/pdf.min.js', array(), null, true);
+    // wp_enqueue_script( 'pdf-viewer', get_template_directory_uri() . '/assets/js/pdf-viewer.js', array('jquery', 'pdfjs'), null, true );
 
     
     
